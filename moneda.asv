@@ -138,9 +138,7 @@ function calc_Callback(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 %calcular = 
-global num txt raw;
-
-T = get(handles.Tabla, 'Data');
+T = get(handles.uitable1, 'Data');
 handles.valorpromedio = mean(cell2mat(T(:,2)));
 
 set(handles.promedio, 'String', num2str(handles.valorpromedio));
